@@ -28,7 +28,6 @@ def main():
     jira = JIRA(options, basic_auth=(auth_user, auth_key))
     show_issue(jira, 'SF-45')
     quit()
-    quit()
 
     new_issue(jira, 'Monday morning walk', 'Stay healthy', 1, 'SF-3')
     new_issue(jira, 'Tuesday morning walk', 'Stay healthy', 1, 'SF-3')
