@@ -25,7 +25,7 @@ def read_auth():
 def main():
     auth_user, auth_key = read_auth()
     options = {'server': 'https://navemagile.atlassian.net/'}
-    jira = JIRA(options, basic_auth=(auth_user, auth_key))
+    jira = JIRA(options=options, basic_auth=(auth_user, auth_key))
     show_issue(jira, 'SF-45')
     quit()
 
